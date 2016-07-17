@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_no">#00000000</color>
+    <color name="bg">#50ce65</color>
+    <color name="bg_low">#398f47</color>
+    <color name="bg_dep">#296b32</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#E6E6E6</color>
+
+    <!-- 自定义选择 左中右颜色 -->
+    <color name="rbtn_normal">#50ce65</color>
+    <color name="rbtn_check">#FFFFFF</color>
+    <color name="whilte">#FFFFFF</color>
+</resources>

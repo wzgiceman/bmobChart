@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ZaoDaoSimple</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simple_data">信息不全</string>
+
+
+    <array name="jiemubiao">
+        <item>节目号</item>
+        <item>节目名称</item>
+        <item>时长</item>
+        <item>演员</item>
+        <item>道具</item>
+        <item>麦克</item>
+        <item>灯光</item>
+        <item>负责人</item>
+    </array>
+</resources>

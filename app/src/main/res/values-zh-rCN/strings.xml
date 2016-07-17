@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">表格</string>
+	<string name="hello_blank_fragment">你好空白片段</string>
+	<string name="simple_data">信息不全</string>
+
+</resources>

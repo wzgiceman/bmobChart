@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                tools:context="com.bysj.mbss.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlyout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbnt_l"
+                style="@style/rbtn_choice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_left"
+                android:checked="true"
+                android:text="用户"/>
+
+
+            <RadioButton
+                android:id="@+id/rbnt_r"
+                style="@style/rbtn_choice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_right"
+                android:text="管理员"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llyout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlyout_title"
+        android:layout_marginTop="200px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingTop="20px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:text="用户名:"
+                android:textSize="18sp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etv_name"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="用户名"
+                android:orientation="vertical"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/bg_low"
+                app:met_singleLineEllipsis="true">
+
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textSize="18sp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etv_psd"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:orientation="vertical"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/bg_low"
+                app:met_singleLineEllipsis="true">
+
+            </com.rengwuxian.materialedittext.MaterialEditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/llyout_1"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:text="注册>"
+        android:textColor="@color/bg_low"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/btn_determinal"
+        style="@style/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:text="确定"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

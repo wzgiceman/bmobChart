@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/poor"
+            android:checked="true"
+            android:icon="@mipmap/ic_book_white_24dp"
+            android:title="发布商品"/>
+
+        <item
+            android:id="@+id/student"
+            android:icon="@mipmap/ic_favorite_white_24dp"
+            android:title="新生专区"/>
+        <item
+            android:id="@+id/my_poor"
+            android:icon="@mipmap/ic_home_white_24dp"
+            android:title="货架"/>
+
+        <item
+            android:id="@+id/my_pull_commit"
+            android:icon="@mipmap/ic_music_note_white_24dp"
+            android:title="发布心情"/>
+
+        <item
+            android:id="@+id/my_emotion"
+            android:icon="@mipmap/ic_music_note_white_24dp"
+            android:title="情感论坛"/>
+    </group>
+
+    <item android:title="EXIT">
+        <menu>
+
+            <item
+                android:id="@+id/sub_exit"
+                android:icon="@mipmap/ic_videogame_asset_white_24dp"
+                android:title="注销用户"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlyout_title"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bg"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/etv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="节目详情"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:background="@mipmap/arrows_circle_check"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlyout_title"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="节目名:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_name"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="节目名"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="时长:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_tel"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="时长"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="演员:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_role"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="演员"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="道具:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_dj"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="道具"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="麦克:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_mik"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="麦克"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="灯光:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_light"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="灯光"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:text="负责人:"
+                    android:textSize="18sp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etv_fzr"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="负责人"
+                    android:orientation="vertical"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/bg_low"
+                    app:met_singleLineEllipsis="true">
+
+                </com.rengwuxian.materialedittext.MaterialEditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
