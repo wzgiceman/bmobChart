@@ -12,7 +12,6 @@ import com.bigkoo.alertview.OnItemClickListener;
 import com.bysj.mbss.R;
 import com.bysj.mbss.common.ImageOptionsUtils;
 import com.bysj.mbss.common.MyApplication;
-import com.bysj.mbss.event.NotingEvent;
 import com.bysj.mbss.event.PaintSrcUpdateEvent;
 import com.bysj.mbss.event.TableUpdateEvent;
 import com.bysj.mbss.fragment.BaseFragment;
@@ -20,8 +19,6 @@ import com.bysj.mbss.fragment.PaintSrcFragment;
 import com.bysj.mbss.fragment.ProgrameUserFragment;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.xutils.view.annotation.ContentView;
@@ -167,23 +164,9 @@ public class UserSecendActivity extends BaseFramentActivity implements Navigatio
         });
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void event(NotingEvent event) {
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (!EventBus.getDefault().isRegistered(this)) {
-            EventBus.getDefault().register(this);
-        }
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        EventBus.getDefault().unregister(this);
         // 取消监听表更新
         rtd.unsubTableUpdate("TableEntity");
         rtd.unsubTableUpdate("PaintSrcEntity");

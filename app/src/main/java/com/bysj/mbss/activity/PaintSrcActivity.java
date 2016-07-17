@@ -13,13 +13,10 @@ import com.bmob.btp.callback.UploadListener;
 import com.bysj.mbss.R;
 import com.bysj.mbss.common.MyApplication;
 import com.bysj.mbss.entity.PaintSrcEntity;
-import com.bysj.mbss.event.NotingEvent;
 import com.bysj.mbss.event.PaintSrcUpdateEvent;
 import com.yancy.imageselector.ImageSelectorActivity;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
@@ -145,24 +142,5 @@ public class PaintSrcActivity extends BaseFramentActivity {
             }
 
         });
-    }
-
-    @Subscribe(threadMode = ThreadMode.POSTING, sticky = true)
-    public void event(NotingEvent event) {
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if(!EventBus.getDefault().isRegistered(this)){
-            EventBus.getDefault().register(this);
-        }
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        EventBus.getDefault().unregister(this);
     }
 }
