@@ -78,7 +78,7 @@ public class BaseFragmentToolsActivity extends BaseFragmentManagerActivity {
         startActivity(intent);
     }
 
-      /**
+    /**
      * 带参数跳转到指定的activity,然后销毁
      *
      * @param cls
