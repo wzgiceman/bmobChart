@@ -78,6 +78,12 @@ public class BaseFragmentToolsActivity extends BaseFragmentManagerActivity {
         startActivity(intent);
     }
 
+      /**
+     * 带参数跳转到指定的activity,然后销毁
+     *
+     * @param cls
+     * @param bundle
+     */
     public void jumpActivityFinish(Class<?> cls, Bundle bundle) {
         Intent intent = new Intent(this, cls);
         intent.putExtras(bundle);
